@@ -1,0 +1,179 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+/* h-scren general*/
+.h-screen{
+    height: 100vh;
+    overflow: auto;
+}
+
+.h-screen::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.h-screen::-webkit-scrollbar:vertical {
+    width:10px;
+}
+
+.h-screen::-webkit-scrollbar-button:increment,.h-screen::-webkit-scrollbar-button {
+    display: none;
+} 
+
+.h-screen::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+.h-screen::-webkit-scrollbar-thumb {
+    background-color: #797979;
+    border-radius: 20px;
+    border: 2px solid #f1f2f3;
+}
+
+.h-screen::-webkit-scrollbar-track {
+    border-radius: 10px;  
+}
+
+/* Fin h-scren general*/
+
+body{
+    overflow: hidden;
+    font-family: "Century Gothic";
+}
+
+/* Menu lateral*/
+#sidebar-container{
+    min-height: 100vh;
+}
+
+#sidebar-container .logo{
+    padding: .875rem 1.25rem;
+}
+
+#sidebar-container .welcome{
+    padding: 10rem 5rem;
+}
+
+#sidebar-container .menu{
+    width: 100%;
+}
+
+#sidebar-container .menu {
+  height: 85vh;
+  overflow-y: scroll;
+  scrollbar-color: rgba(0, 0, 0, .5) rgba(0, 0, 0, 0);
+  scrollbar-width: thin;
+}
+
+.menu::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.menu::-webkit-scrollbar:vertical {
+    width:10px;
+}
+
+.menu::-webkit-scrollbar-button:increment,.menu::-webkit-scrollbar-button {
+    display: none;
+} 
+
+.menu::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+.menu::-webkit-scrollbar-thumb {
+    background-color: #797979;
+    border-radius: 20px;
+    border: 2px solid #f1f2f3;
+}
+
+.menu::-webkit-scrollbar-track {
+    border-radius: 10px;  
+}
+
+/* Fin Menu lateral*/
+
+/*Tamaño de los iconos*/
+i {
+  font-size: 20px;
+}
+.zoom-img {
+/*  padding: 50px;
+  background-color: green;*/
+  transition: transform .5s; /* Animation */
+ /* width: 200px;
+  height: 200px;*/
+}
+
+.zoom-img:hover {
+  transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+@media only screen and (max-width: 700px) {
+  video {
+    max-width: 100%;
+  }
+}
+
+
+/* Tooltips */
+
+/* Color de Flechas */
+
+/* Flecha inferior */
+.bs-tooltip-auto[x-placement^=bottom] .arrow::before,
+  .bs-tooltip-bottom .arrow::before {
+    border-bottom-color: #034987;
+  }
+
+/* Flecha superior*/
+.bs-tooltip-auto[x-placement^=top] .arrow::before,
+  .bs-tooltip-top .arrow::before {
+    border-top-color: #034987;
+  }
+
+/* Flecha derecha*/
+.bs-tooltip-auto[x-placement^=right] .arrow::before,
+  .bs-tooltip-right .arrow::before {
+    border-right-color: #034987;
+  }
+
+/* Flecha izquierda*/
+.bs-tooltip-auto[x-placement^=left] .arrow::before,
+  .bs-tooltip-left .arrow::before {
+    border-left-color: #034987;
+  }
+
+/* Color cuerpo */
+.tooltip-inner {
+    color: #fff;
+    background-color: #034987;
+}
+/* Fin Tooltips */
+
+//Boton de camara
+.btn-camera {
+  position: relative;
+  bottom: 160px;
+  right: 0px;
+  z-index: 99;
+}
+
+//Mensaje de error Jquey
+.message{
+   color: #D41F1F;
+   font-size: 12px;
+   font-weight:bold;
+   font-family: arial;
+   font-style:italic; 
+}
+
+//Color gris para el footer
+.bg-gris {
+  background-color: #e4e3e8 !important;
+}
