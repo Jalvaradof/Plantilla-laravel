@@ -6,7 +6,7 @@
 		<div class="row">
 			<div class="col-12 col-sm-10 col-lg-10 mx-auto">
 				<div class="d-flex justify-content-between align-items-center mb-3">
-                    <h2 class="mb-0">Contactos</h2>
+                    <h2 class="text-primary mb-0">Contactos</h2>
                     @auth
                         <div class="btn-group btn-group-sm">
                             <a class="btn btn-outline-success"
