@@ -13,18 +13,8 @@
                                href="{{ route('contacts.create') }}"
                                data-toggle="tooltip" data-placement="top" title="Registrar contacto">
                                 {{-- Asignar --}}
-                                <i class="icon ion-md-add-circle p-1"></i>
+                                <i class="fas fa-plus-circle fa-1.2x p-1"></i>
                             </a>
-                            {{-- <form method="POST" action="{{-- {{ route('assigned-floor.destroyAll') }} --}}{{-- " class="confirm-delete-everybody">
-                                @csrf
-                                 <input type="hidden" name="id" value="{{-- {{ $id_assignedFloors }} --}}{{-- "> --}}
-                                {{-- <button 
-                                    class="btn btn-outline-danger btn-sm delete-assigned-everybody" type="submit" 
-                                    data-toggle="tooltip" data-placement="top" title="Eliminar asignaciones" value=" --}}{{-- {{ count($visit_actives) }} ">--}}
-                                    {{-- Eliminar asignaciones --}}
-                                    {{-- <i class="icon ion-md-trash p-1"></i>
-                                </button> --}}
-                            {{-- </form> --}}
                         </div>
                         <form id="delete-assignedFloors" class="d-none" method="POST" action="{{-- {{ route('assigned-floor.destroyAll', $assignedFloors) }} --}}">
                             @csrf @method('DELETE')
@@ -53,19 +43,19 @@
                                             class="btn btn-primary" 
                                             href="{{ route('contacts.show', $contact) }}"
                                             data-toggle="tooltip" data-placement="top" title="Ver">
-                                            <i class="icon ion-md-eye"></i>
+                                            <i class="fas fa-eye fa-1.2x"></i>
                                         </a>
                                         <a 
                                             class="btn btn-primary" 
                                             href="{{ route('contacts.edit', $contact) }}"
                                             data-toggle="tooltip" data-placement="top" title="Editar">
-                                            <i class="icon ion-md-create ml-1"></i>
+                                            <i class="fas fa-edit fa-1.2x"></i>
                                         </a>
 	                                    <form method="POST" action="{{ route('contacts.destroy', $contact) }}" class="confirm-delete">
 									        @csrf @method('DELETE')
 									        <button class="btn btn-danger btn-sm" type="submit"
 									            data-toggle="tooltip" data-placement="top" title="Eliminar">
-									            <i class="icon ion-md-trash"></i>
+									            <i class="fas fa-trash-alt fa-1.2x"></i>
 									        </button>
 									    </form>
                                     </div>

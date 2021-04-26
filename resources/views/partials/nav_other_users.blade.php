@@ -57,8 +57,9 @@
             @else
                 <li class="nav-item">
                     <a class="nav-link {{ setActive('login')  }}" href="{{ route('login') }}">
-                        Login
+                        Login fsd
                         <i class="icon ion-md-log-in ml-1"></i>
+                        <i class="fas fa-sign-in-alt fa-1.2x"></i>
                     </a>
                 </li>
             @endauth

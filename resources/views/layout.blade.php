@@ -19,8 +19,7 @@
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    {{-- <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"> --}}
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -34,22 +33,7 @@
                 <div class="logo">
                     <img src="/img/BancamigaLogo.svg" class="mr-3" alt="Bancamiga" width="200" height="50">
                 </div> 
-                <div class="menu"> 
-                    <ul class="nav nav-pills flex-column">
-                        <li>
-                            <a class="nav-link {{ setActive('home')  }}" href="{{ route('home') }}">
-                                <i class="fas fa-home fa-1.2x mr-1" size="small"></i>
-                                @lang('Home')
-                            </a>
-                        </li>
-                        <li>
-                            <a class="nav-link {{ setActive('contact')  }}" href="{{ route('contacts.index') }}">
-                                <i class="icon ion-md-chatboxes mr-2"></i>
-                                @lang('Contact')
-                            </a>
-                        </li>
-                    </ul>
-            </div>
+                @include('partials.menu')
         </div> 
     @endauth    
     <div class="w-100 d-flex flex-column h-screen justify-content-between">

@@ -13,9 +13,9 @@
                     @csrf
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
-                            <label for="username">
-                                <span class="input-group-text" id="basic-addon1">Usuario</span>
-                            </label>
+                            <span class="input-group-text" id="basic-addon1">
+                                <i class="fas fa-user fa-1.2x"></i>
+                            </span>
                         </div>
                         <input class="form-control  @error('username') is-invalid @enderror"
                                 name="username" type="text" id="username"
@@ -31,7 +31,9 @@
                     <br>
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
-                            <span class="input-group-text" id="basic-addon1">Contraseña</span>
+                            <span class="input-group-text" id="basic-addon1">
+                                <i class="fas fa-unlock-alt fa-1.2x"></i>
+                            </span>
                         </div>
                         <input class="form-control @error('password') is-invalid @enderror"
                                 name="password" id="password" type="password"

@@ -20,7 +20,7 @@
                 <li class="nav-item dropdown">
                     <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                         {{ auth()->user()->name }} {{ auth()->user()->last_name }} 
-                        <i class="icon ion-md-person ml-2"></i>
+                        <i class="fas fa-user fa-1.2x m-1"></i>
                     </a>
 
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
@@ -31,10 +31,9 @@
                             </p>
                             
                         </a> --}}
-                        <a class="dropdown-item" href="#"
-                           onclick="confirmLogout()">
+                        <a class="dropdown-item" href="#" onclick="confirmLogout()">
                             <p class="text-primary">
-                                <i class="icon ion-md-power mr-2" style="color: #FF0000"></i>
+                                <i class="fas fa-power-off fa-1.2x mr2" style="color: #FF0000"></i>
                                 Cerrar Sesión
                             </p>
                         </a>
@@ -44,7 +43,7 @@
                 <li class="nav-item">
                     <a class="nav-link {{-- {{ setActive('login')  }} --}}" href="{{ route('login') }}">
                         Login
-                        <i class="icon ion-md-log-in ml-1"></i>
+                        <i class="fas fa-sign-in-alt fa-1.2x ml-1"></i>
                     </a>
                 </li>
         @endauth

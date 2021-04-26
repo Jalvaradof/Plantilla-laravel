@@ -25,7 +25,10 @@
             <div class="d-flex justify-content-between align-items-center">
                 <a href="{{ route('contacts.index') }}">Menú principal</a>
                     <div class="btn-group btn-group-sm">
-                        <a class="btn btn-primary" href="{{ route('contacts.edit', $contact) }}">Editar</a>
+                        <a class="btn btn-primary" href="{{ route('contacts.edit', $contact) }}"
+                        data-toggle="tooltip" data-placement="top" title="Editar">
+                            <i class="fas fa-edit fa-1.2x"></i>
+                        </a>
                     </div>
                     <form id="delete-contacts" class="d-none" method="POST" action="{{ route('contacts.destroy', $contact) }}">
                         @csrf @method('DELETE')
