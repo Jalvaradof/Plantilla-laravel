@@ -9,7 +9,7 @@
                     Aquí se agrega un descripción del aplicativo.
                 </p>
                 <p class="lead text-secondary">
-                    El nombre el aplicativo se modifica en el archivo ".env"
+                    El nombre el aplicativo se modifica en el Archivo ".env"
                 </p>
             </div>
             <div class="col-12 col-lg-6">
